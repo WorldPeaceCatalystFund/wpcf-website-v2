@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline": "#6e797d",
+              "on-surface": "#181c20",
+              "primary": "#00677e",
+              "surface-container-highest": "#e0e3e8",
+              "secondary-container": "#f2e351",
+              "on-tertiary-fixed-variant": "#2b4d44",
+              "on-secondary": "#ffffff",
+              "primary-container": "#4bb1cf",
+              "inverse-on-surface": "#eef1f6",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed-dim": "#a9cec2",
+              "surface-tint": "#00677e",
+              "surface-dim": "#d7dadf",
+              "on-tertiary-fixed": "#00201a",
+              "secondary": "#686000",
+              "on-secondary-fixed-variant": "#4e4800",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed": "#1f1c00",
+              "surface-container-low": "#f1f4f9",
+              "on-tertiary": "#ffffff",
+              "on-background": "#181c20",
+              "tertiary-fixed": "#c5ebde",
+              "surface-variant": "#e0e3e8",
+              "on-error": "#ffffff",
+              "tertiary": "#42655b",
+              "surface": "#f7f9ff",
+              "background": "#f7f9ff",
+              "tertiary-container": "#88aca1",
+              "on-primary-fixed-variant": "#004e5f",
+              "on-primary-fixed": "#001f27",
+              "surface-container": "#ebeef3",
+              "surface-container-high": "#e5e8ee",
+              "on-surface-variant": "#3e484c",
+              "error": "#ba1a1a",
+              "surface-bright": "#f7f9ff",
+              "inverse-surface": "#2d3135",
+              "on-primary-container": "#004150",
+              "primary-fixed": "#b4ebff",
+              "on-primary": "#ffffff",
+              "error-container": "#ffdad6",
+              "inverse-primary": "#71d3f2",
+              "on-tertiary-container": "#1e4038",
+              "on-secondary-container": "#6d6400",
+              "secondary-fixed-dim": "#d8c939",
+              "secondary-fixed": "#f5e554",
+              "primary-fixed-dim": "#71d3f2",
+              "outline-variant": "#bdc8cd"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-effect {
+        backdrop-filter: blur(12px);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none bg-slate-50/50 dark:bg-slate-800/50">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold text-cyan-900 dark:text-cyan-100 font-headline tracking-tight">World Peace Catalyst Fund</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors font-inter text-sm" href="#">Impact</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors font-inter text-sm" href="#">Initiatives</a>
+<a class="text-cyan-700 dark:text-cyan-400 font-semibold border-b-2 border-cyan-700 dark:border-cyan-400 pb-1 font-inter text-sm" href="#">Volunteer</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors font-inter text-sm" href="#">Donate</a>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-semibold hover:opacity-80 transition-all duration-300 scale-95 active:scale-90">Join Us</button>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-20">
+<!-- Hero Section -->
+<section class="relative px-6 py-16 md:py-24 max-w-7xl mx-auto overflow-hidden">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<span class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wider uppercase bg-tertiary-container text-on-tertiary-container rounded-full">Global Solidarity</span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-on-surface leading-[1.1] mb-8 -tracking-wider">
+                    Be the <span class="text-primary italic">Catalyst</span> for Global Peace.
+                </h1>
+<p class="text-xl text-on-surface-variant leading-relaxed max-w-lg mb-10">
+                    Join a collective of visionary leaders and grassroots advocates dedicated to weaving a more peaceful world through data, dialogue, and direct action.
+                </p>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl rotate-3 translate-x-4">
+<img alt="Collaborative effort" class="w-full h-full object-cover" data-alt="Close-up of diverse hands stacked together in the center of a circle, warm golden sunlight filtering through, soft ethereal atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmSeLrDUD831fjg8bNa4WuwEdTensoxLMmIfHor1iyqpFuDqjsEEYAngwbZblO6gn2QvnJAa5i0wvgVHMkI1gTagQqxYNaZVX0Oj50NGI5ysCkA08a71h318G5kb7ZgaNpxqkwnVSSrreV0xuVngKuTwPXDDlPSwPsSi7EkOTKt-LDJOFyxBHg-VE1RbQ8sPMUoOJTG2-l2ng6J7cx_L_LQzs5ghwm46mv9CsBseiTa2dJFI69cyZY649ZaMQekHR8egfZrz_zSg"/>
+</div>
+<div class="absolute -bottom-6 -left-6 aspect-square w-48 rounded-2xl overflow-hidden shadow-xl -rotate-6 border-8 border-surface z-20">
+<img alt="Community gathering" class="w-full h-full object-cover" data-alt="Group of people talking in a sunlit outdoor garden with soft sage green foliage and peaceful expressions" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcSCQTBoAUTjQwuCtV7Y-Mm8Qz_bD-Iq7cN8DNdqY2Qj7yAfpkITD6L9Sj7b0lOXBw4OZfnqM7k0HoUelg3dENlIxOieLY4YB_v6c3CtobfADw9rOv0Yip8ygEixKr9EaWTtPfsjeq3CLCUq1pX_SrBDY5RDSKk3zmkVI4cgp9tinv2fTwEWpg0qnXDihH9CUsI7V_XB6iBhpxe--vVFeLUUtfa7GhLZIn_Pz-6MYQMhU0xqq8ENKdlFlTSNj4eqj-iqFcUykC1A"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Volunteer Interest Areas -->
+<section class="py-20 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16 text-center md:text-left">
+<h2 class="text-3xl font-headline font-bold mb-4">Interest Areas</h2>
+<p class="text-on-surface-variant">Select the spheres where your expertise can shine.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+<!-- Interest Card 1 -->
+<label class="group cursor-pointer relative">
+<input class="peer sr-only" type="checkbox"/>
+<div class="h-full p-8 rounded-xl bg-surface-container-lowest peer-checked:bg-primary peer-checked:text-on-primary transition-all duration-300 shadow-sm border border-transparent peer-checked:border-primary-container">
+<span class="material-symbols-outlined text-3xl mb-4 text-primary group-hover:scale-110 transition-transform peer-checked:text-on-primary">groups</span>
+<h3 class="font-headline font-bold text-lg mb-2">Community Outreach</h3>
+<p class="text-sm opacity-80">Building local bridges and connecting with hearts on the ground.</p>
+</div>
+</label>
+<!-- Interest Card 2 -->
+<label class="group cursor-pointer relative">
+<input class="peer sr-only" type="checkbox"/>
+<div class="h-full p-8 rounded-xl bg-surface-container-lowest peer-checked:bg-primary peer-checked:text-on-primary transition-all duration-300 shadow-sm border border-transparent peer-checked:border-primary-container">
+<span class="material-symbols-outlined text-3xl mb-4 text-primary group-hover:scale-110 transition-transform peer-checked:text-on-primary">analytics</span>
+<h3 class="font-headline font-bold text-lg mb-2">Research &amp; Data Analysis</h3>
+<p class="text-sm opacity-80">Quantifying peace and identifying catalysts for change.</p>
+</div>
+</label>
+<!-- Interest Card 3 -->
+<label class="group cursor-pointer relative">
+<input class="peer sr-only" type="checkbox"/>
+<div class="h-full p-8 rounded-xl bg-surface-container-lowest peer-checked:bg-primary peer-checked:text-on-primary transition-all duration-300 shadow-sm border border-transparent peer-checked:border-primary-container">
+<span class="material-symbols-outlined text-3xl mb-4 text-primary group-hover:scale-110 transition-transform peer-checked:text-on-primary">calendar_today</span>
+<h3 class="font-headline font-bold text-lg mb-2">Event Coordination</h3>
+<p class="text-sm opacity-80">Organizing summits and peaceful gatherings globally.</p>
+</div>
+</label>
+<!-- Interest Card 4 -->
+<label class="group cursor-pointer relative">
+<input class="peer sr-only" type="checkbox"/>
+<div class="h-full p-8 rounded-xl bg-surface-container-lowest peer-checked:bg-primary peer-checked:text-on-primary transition-all duration-300 shadow-sm border border-transparent peer-checked:border-primary-container">
+<span class="material-symbols-outlined text-3xl mb-4 text-primary group-hover:scale-110 transition-transform peer-checked:text-on-primary">campaign</span>
+<h3 class="font-headline font-bold text-lg mb-2">Peace Advocacy</h3>
+<p class="text-sm opacity-80">Raising voices and influencing policy at every level.</p>
+</div>
+</label>
+<!-- Interest Card 5 -->
+<label class="group cursor-pointer relative">
+<input class="peer sr-only" type="checkbox"/>
+<div class="h-full p-8 rounded-xl bg-surface-container-lowest peer-checked:bg-primary peer-checked:text-on-primary transition-all duration-300 shadow-sm border border-transparent peer-checked:border-primary-container">
+<span class="material-symbols-outlined text-3xl mb-4 text-primary group-hover:scale-110 transition-transform peer-checked:text-on-primary">school</span>
+<h3 class="font-headline font-bold text-lg mb-2">Education &amp; Training</h3>
+<p class="text-sm opacity-80">Empowering future peacemakers with modern tools.</p>
+</div>
+</label>
+</div>
+</div>
+</section>
+<!-- Current Opportunities Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-3xl font-headline font-bold mb-4">Current Opportunities</h2>
+<p class="text-on-surface-variant text-lg">Urgent roles where your immediate contribution can make a profound difference in active peace-building projects.</p>
+</div>
+<a class="text-primary font-semibold flex items-center gap-2 hover:underline" href="#">
+                    View All Roles <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Opportunity Role 1 -->
+<div class="bg-surface-container p-8 rounded-2xl border border-outline-variant/30 flex flex-col">
+<div class="flex justify-between items-start mb-6">
+<span class="px-3 py-1 bg-error-container text-on-error-container text-xs font-bold rounded-full tracking-wider uppercase">Urgent</span>
+<span class="material-symbols-outlined text-primary">volunteer_activism</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-3">Refugee Support Coordinator</h3>
+<p class="text-on-surface-variant mb-6 text-sm flex-grow">Managing logistics and emotional support networks for displaced families in transit zones.</p>
+<a class="text-primary font-bold text-sm inline-flex items-center group" href="#">
+                        Learn More 
+                        <span class="material-symbols-outlined ml-1 transition-transform group-hover:translate-x-1">chevron_right</span>
+</a>
+</div>
+<!-- Opportunity Role 2 -->
+<div class="bg-surface-container p-8 rounded-2xl border border-outline-variant/30 flex flex-col">
+<div class="flex justify-between items-start mb-6">
+<span class="px-3 py-1 bg-tertiary-container text-on-tertiary-container text-xs font-bold rounded-full tracking-wider uppercase">Active</span>
+<span class="material-symbols-outlined text-primary">psychology</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-3">Conflict Resolution Analyst</h3>
+<p class="text-on-surface-variant mb-6 text-sm flex-grow">Reviewing local tension data to propose de-escalation strategies for urban community centers.</p>
+<a class="text-primary font-bold text-sm inline-flex items-center group" href="#">
+                        Learn More 
+                        <span class="material-symbols-outlined ml-1 transition-transform group-hover:translate-x-1">chevron_right</span>
+</a>
+</div>
+<!-- Opportunity Role 3 -->
+<div class="bg-surface-container p-8 rounded-2xl border border-outline-variant/30 flex flex-col">
+<div class="flex justify-between items-start mb-6">
+<span class="px-3 py-1 bg-primary-container text-on-primary-container text-xs font-bold rounded-full tracking-wider uppercase">New</span>
+<span class="material-symbols-outlined text-primary">public</span>
+</div>
+<h3 class="text-xl font-headline font-bold mb-3">Community Outreach Lead</h3>
+<p class="text-on-surface-variant mb-6 text-sm flex-grow">Leading a team of local volunteers to establish "Peace Hubs" in underrepresented regions.</p>
+<a class="text-primary font-bold text-sm inline-flex items-center group" href="#">
+                        Learn More 
+                        <span class="material-symbols-outlined ml-1 transition-transform group-hover:translate-x-1">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Signup Form Section -->
+<section class="py-24 max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-16 items-start">
+<div class="md:col-span-5">
+<div class="sticky top-32">
+<h2 class="text-4xl font-headline font-bold mb-6 text-on-surface">Volunteer Intake</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                    Your application is the first step toward a collaborative partnership. We value unique backgrounds and professional expertise that align with our mission of sustainable peace.
+                </p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Vetted Network</h4>
+<p class="text-sm text-on-surface-variant">Join a community of 500+ global experts.</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Flexible Commitment</h4>
+<p class="text-sm text-on-surface-variant">Projects ranging from 2 to 20 hours per month.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-7 bg-surface-container-lowest p-8 md:p-12 rounded-3xl shadow-sm">
+<form class="space-y-8">
+<div class="grid md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block text-sm font-label font-medium text-on-surface-variant">Full Name</label>
+<input class="w-full bg-surface-container-highest border-none border-b-2 border-transparent focus:ring-0 focus:border-primary px-4 py-3 rounded-lg text-on-surface placeholder:text-outline/50 transition-all" placeholder="Aiden Silva" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-label font-medium text-on-surface-variant">Email Address</label>
+<input class="w-full bg-surface-container-highest border-none border-b-2 border-transparent focus:ring-0 focus:border-primary px-4 py-3 rounded-lg text-on-surface placeholder:text-outline/50 transition-all" placeholder="aiden@globalpeace.org" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-label font-medium text-on-surface-variant">Current Location (City, Country)</label>
+<input class="w-full bg-surface-container-highest border-none border-b-2 border-transparent focus:ring-0 focus:border-primary px-4 py-3 rounded-lg text-on-surface placeholder:text-outline/50 transition-all" placeholder="The Hague, Netherlands" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-label font-medium text-on-surface-variant">How you'd like to help</label>
+<textarea class="w-full bg-surface-container-highest border-none border-b-2 border-transparent focus:ring-0 focus:border-primary px-4 py-3 rounded-lg text-on-surface placeholder:text-outline/50 transition-all resize-none" placeholder="Describe your experience or specific interests..." rows="4"></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full md:w-auto px-10 py-4 bg-primary text-on-primary rounded-full font-bold text-lg shadow-lg hover:shadow-xl hover:bg-primary/90 transition-all active:scale-[0.98]" type="submit">
+                        Submit Application
+                    </button>
+</div>
+<p class="text-xs text-on-surface-variant text-center md:text-left mt-6">
+                    By submitting this form, you agree to our <a class="underline" href="#">Volunteer Code of Conduct</a> and <a class="underline" href="#">Privacy Policy</a>.
+                </p>
+</form>
+</div>
+</section>
+<!-- Impact Teaser -->
+<section class="max-w-7xl mx-auto px-6 mb-24">
+<div class="bg-gradient-to-br from-primary to-primary-container p-12 md:p-20 rounded-[2.5rem] relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<svg class="h-full w-full" preserveaspectratio="none" viewbox="0 0 100 100">
+<path d="M0 0 L100 100 M100 0 L0 100" stroke="white" stroke-width="0.1"></path>
+</svg>
+</div>
+<div class="relative z-10 max-w-2xl">
+<h3 class="text-3xl md:text-5xl font-headline font-bold text-on-primary mb-6">"Peace is not a product, but a process we build together."</h3>
+<div class="flex items-center gap-4 text-on-primary/80">
+<div class="w-12 h-0.5 bg-secondary-container"></div>
+<span class="font-headline font-semibold">Director of Global Outreach</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[2.5rem] mt-20 bg-surface-container-low dark:bg-slate-950 font-inter text-sm leading-relaxed">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-12 py-20">
+<div class="space-y-6">
+<div class="font-manrope font-bold text-primary text-lg">World Peace Catalyst Fund</div>
+<p class="text-slate-500 dark:text-slate-500">© 2024 World Peace Catalyst Fund. All rights reserved. 501(c)(3) Non-profit Organization.</p>
+</div>
+<div class="space-y-4 flex flex-col">
+<h4 class="font-bold text-primary uppercase tracking-wider text-xs">Resources</h4>
+<a class="text-slate-500 dark:text-slate-500 hover:underline decoration-2 underline-offset-4 transition-all" href="#">Impact Report</a>
+<a class="text-slate-500 dark:text-slate-500 hover:underline decoration-2 underline-offset-4 transition-all" href="#">Tax Status</a>
+</div>
+<div class="space-y-4 flex flex-col">
+<h4 class="font-bold text-primary uppercase tracking-wider text-xs">Support</h4>
+<a class="text-slate-500 dark:text-slate-500 hover:underline decoration-2 underline-offset-4 transition-all" href="#">Contact Us</a>
+<a class="text-slate-500 dark:text-slate-500 hover:underline decoration-2 underline-offset-4 transition-all" href="#">Privacy Policy</a>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-primary uppercase tracking-wider text-xs">Subscribe to Peace</h4>
+<p class="text-slate-500 dark:text-slate-500">Join our monthly newsletter for global impact updates.</p>
+<form class="flex gap-2">
+<input class="bg-surface-container-highest border-none px-4 py-2 rounded-lg text-on-surface placeholder:text-outline/50 w-full focus:ring-2 focus:ring-primary/20" placeholder="Email address" type="email"/>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-bold hover:opacity-70 active:scale-[0.98] transition-all" type="submit">Join</button>
+</form>
+</div>
+</div>
+</footer>
+</body></html>
