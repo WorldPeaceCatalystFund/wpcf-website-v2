@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#a9cec2",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed-dim": "#d8c939",
+              "error-container": "#ffdad6",
+              "on-primary-container": "#004150",
+              "on-error": "#ffffff",
+              "surface-dim": "#d7dadf",
+              "surface-bright": "#f7f9ff",
+              "on-secondary-container": "#6d6400",
+              "primary-container": "#4bb1cf",
+              "error": "#ba1a1a",
+              "primary-fixed": "#b4ebff",
+              "surface-variant": "#e0e3e8",
+              "on-background": "#181c20",
+              "surface-container": "#ebeef3",
+              "on-primary-fixed-variant": "#004e5f",
+              "inverse-primary": "#71d3f2",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed-variant": "#2b4d44",
+              "on-secondary-fixed": "#1f1c00",
+              "primary-fixed-dim": "#71d3f2",
+              "inverse-surface": "#2d3135",
+              "tertiary-container": "#88aca1",
+              "tertiary": "#42655b",
+              "primary": "#00677e",
+              "surface-tint": "#00677e",
+              "secondary-container": "#f2e351",
+              "surface-container-high": "#e5e8ee",
+              "on-surface-variant": "#3e484c",
+              "on-secondary-fixed-variant": "#4e4800",
+              "surface-container-highest": "#e0e3e8",
+              "outline-variant": "#bdc8cd",
+              "on-primary": "#ffffff",
+              "on-tertiary-container": "#1e4038",
+              "background": "#f7f9ff",
+              "surface-container-low": "#f1f4f9",
+              "outline": "#6e797d",
+              "on-surface": "#181c20",
+              "tertiary-fixed": "#c5ebde",
+              "on-secondary": "#ffffff",
+              "on-tertiary-fixed": "#00201a",
+              "on-error-container": "#93000a",
+              "surface": "#f7f9ff",
+              "on-primary-fixed": "#001f27",
+              "inverse-on-surface": "#eef1f6",
+              "secondary-fixed": "#f5e554",
+              "secondary": "#686000"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f7f9ff; color: #181c20; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .ethereal-blur { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    </style>
+</head>
+<body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold text-teal-900 dark:text-teal-50 font-manrope tracking-tight">World Peace Catalyst Fund</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-teal-700 dark:text-teal-300 border-b-2 border-teal-600 pb-1 font-manrope tracking-tight" href="#">Vision</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-300 transition-colors font-manrope tracking-tight" href="#">Approach</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-300 transition-colors font-manrope tracking-tight" href="#">Leadership</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-300 transition-colors font-manrope tracking-tight" href="#">Impact</a>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-semibold hover:opacity-80 transition-opacity duration-200 ease-in-out scale-95">Donate</button>
+</div>
+<button class="md:hidden material-symbols-outlined text-primary">menu</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-surface to-transparent z-10"></div>
+<img class="w-full h-full object-cover opacity-60" data-alt="wide panoramic view of a serene mountain lake at dawn with soft mist and golden light reflecting on still water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIyMBtG7PfhL1QAUG_bZdU8ksMY1CpWscsGAChvGL3TpkNU7XXYJ9rB38v-OcnPJRA-Hqyl6pTULgIOn9_PoNAKEuytiHlPJ6RiUSoO5Kx0LY5fELX0VcaYBZ9vnOFICzVAKOuiNjTN511lq-Jo3-ZolQCj1DMxyWI7Oq4c9KWF4NhWxyGEhU5ehdumyoB8ZhFlA55i-lAugwFLV6lebeV6x3K4CezeQuOPS0GbbUYKR_24AmSk67maMD-e-L3dgvVbJyoxGejjw"/>
+</div>
+<div class="relative z-20 max-w-7xl mx-auto px-8">
+<div class="max-w-3xl">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-on-surface tracking-tighter leading-tight mb-6">
+                Our Mission: <br/><span class="text-primary">To Catalyze Peace</span>
+</h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant leading-relaxed mb-8">
+                We are dedicated to sustainable conflict resolution, fostering global resilience through strategic investment in local harmony.
+            </p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-bold text-lg hover:opacity-90 transition-all">Explore Our Work</button>
+<button class="text-primary font-bold px-8 py-4 flex items-center gap-2 hover:underline">
+                    Learn More <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- The Genesis (Our Story) -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="group of diverse professional individuals sitting in a bright airy modern workspace engaged in a thoughtful discussion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjsBU20tGn6UBUC9YRxq62-BQX_aQqZHK-n2pzUjtzdlKeM8XsAa-oiNZBBiZV67eEZxn-0P1p3mWENj8dGKF3FGhNcvYDh1BsOyCgsM-wXgH07RPO-JvJ9aL6VA_79EfScxZuNAXqe24bGLNJEK4wthp42UAM1UiTsL1Ngkc_9F2S274GL1ort9fZldzJS0nUdRF7Ef5oY7JjAG1P8DsqnCRPVTOeCnYa7KP1if4bY-auBKzp36XkBSISsjspyNQTmaAPjGdA6g"/>
+</div>
+<div class="absolute -bottom-8 -right-8 w-64 h-64 bg-secondary-container rounded-xl -z-10 opacity-30"></div>
+</div>
+<div class="space-y-8">
+<h2 class="font-headline text-4xl font-bold text-on-surface">The Genesis</h2>
+<div class="space-y-6 font-body text-lg text-on-surface-variant leading-relaxed">
+<p>
+                    The World Peace Catalyst Fund was born from a single realization: peace is not merely the absence of conflict, but the presence of justice and systemic resilience. Founded in 2014 by a coalition of diplomats and scientists, we began as a small research initiative focused on identifying the root causes of regional instability.
+                </p>
+<p>
+                    What started as a data-driven approach evolved into a global movement. We discovered that by empowering local leaders with the scientific tools for mediation and strategic funding, we could transform volatile environments into hubs of sustainable development.
+                </p>
+<p>
+                    Today, our evolution continues. We bridge the gap between high-level policy and grassroots action, ensuring that every investment we make acts as a catalyst for long-term, self-sustaining peace.
+                </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline of Achievements Section -->
+<section class="py-24 bg-surface overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl font-bold text-on-surface mb-4">A Legacy of Impact</h2>
+<p class="font-body text-on-surface-variant max-w-2xl mx-auto">From a research initiative to a global force for harmony, explore the milestones that define our journey.</p>
+</div>
+<div class="relative">
+<!-- Vertical Line (Desktop) -->
+<div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-outline-variant -translate-x-1/2"></div>
+<div class="space-y-12 md:space-y-0">
+<!-- Milestone 1 -->
+<div class="relative flex flex-col md:flex-row items-center md:mb-24 group">
+<div class="flex-1 md:text-right md:pr-12 mb-4 md:mb-0">
+<div class="inline-block px-4 py-1 rounded-full bg-primary-container text-on-primary-container font-bold text-sm mb-2">2014</div>
+<h3 class="font-headline text-2xl font-bold text-on-surface">The Founding</h3>
+<p class="font-body text-on-surface-variant max-w-sm md:ml-auto">Established as a small research coalition in Stockholm, focusing on data-driven conflict analysis.</p>
+</div>
+<div class="z-10 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-lg scale-100 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">rocket_launch</span>
+</div>
+<div class="flex-1 md:pl-12 mt-4 md:mt-0"></div>
+</div>
+<!-- Milestone 2 -->
+<div class="relative flex flex-col md:flex-row items-center md:mb-24 group">
+<div class="flex-1 md:pr-12 mb-4 md:mb-0 order-1 md:order-none"></div>
+<div class="z-10 w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-lg scale-100 group-hover:scale-110 transition-transform order-2 md:order-none">
+<span class="material-symbols-outlined text-2xl">handshake</span>
+</div>
+<div class="flex-1 md:pl-12 mt-4 md:mt-0 md:text-left order-3 md:order-none">
+<div class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-bold text-sm mb-2">2017</div>
+<h3 class="font-headline text-2xl font-bold text-on-surface">First Major Peace Initiative</h3>
+<p class="font-body text-on-surface-variant max-w-sm">Mediated regional tensions in South Asia, marking our transition from research to active field engagement.</p>
+</div>
+</div>
+<!-- Milestone 3 -->
+<div class="relative flex flex-col md:flex-row items-center md:mb-24 group">
+<div class="flex-1 md:text-right md:pr-12 mb-4 md:mb-0">
+<div class="inline-block px-4 py-1 rounded-full bg-tertiary-container text-on-tertiary-container font-bold text-sm mb-2">2020</div>
+<h3 class="font-headline text-2xl font-bold text-on-surface">Reaching 25 Nations</h3>
+<p class="font-body text-on-surface-variant max-w-sm md:ml-auto">Successfully scaled our community-led intervention model across three continents, impacting over 2 million lives.</p>
+</div>
+<div class="z-10 w-12 h-12 rounded-full bg-tertiary flex items-center justify-center text-on-tertiary shadow-lg scale-100 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">public</span>
+</div>
+<div class="flex-1 md:pl-12 mt-4 md:mt-0"></div>
+</div>
+<!-- Milestone 4 -->
+<div class="relative flex flex-col md:flex-row items-center group">
+<div class="flex-1 md:pr-12 mb-4 md:mb-0 order-1 md:order-none"></div>
+<div class="z-10 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-lg scale-100 group-hover:scale-110 transition-transform order-2 md:order-none">
+<span class="material-symbols-outlined text-2xl">biotech</span>
+</div>
+<div class="flex-1 md:pl-12 mt-4 md:mt-0 md:text-left order-3 md:order-none">
+<div class="inline-block px-4 py-1 rounded-full bg-primary-container text-on-primary-container font-bold text-sm mb-2">2023</div>
+<h3 class="font-headline text-2xl font-bold text-on-surface">Launching the Global Research Hub</h3>
+<p class="font-body text-on-surface-variant max-w-sm">Opened our new HQ dedicated to open-source peace metrics and Al-driven conflict prediction.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Values -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl font-bold text-on-surface mb-4">Our Core Values</h2>
+<p class="font-body text-on-surface-variant max-w-2xl mx-auto">The fundamental principles that guide every decision, investment, and partnership we undertake.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Value Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border-b-4 border-primary transition-transform hover:-translate-y-2">
+<div class="w-12 h-12 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">gavel</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3">Integrity</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">Unwavering transparency in our funding and absolute neutrality in our mediation efforts.</p>
+</div>
+<!-- Value Card 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border-b-4 border-secondary transition-transform hover:-translate-y-2">
+<div class="w-12 h-12 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3">Community-Led</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">We believe those closest to the conflict are best equipped to design the solutions for peace.</p>
+</div>
+<!-- Value Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border-b-4 border-tertiary transition-transform hover:-translate-y-2">
+<div class="w-12 h-12 bg-tertiary-container text-on-tertiary-container rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">biotech</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3">Evidence-Based</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">Leveraging data and scientific research to predict risks and measure the impact of our interventions.</p>
+</div>
+<!-- Value Card 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl border-b-4 border-outline-variant transition-transform hover:-translate-y-2">
+<div class="w-12 h-12 bg-surface-container-high text-on-surface-variant rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">all_inclusive</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3">Interdependence</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">Recognizing that global stability is a shared responsibility across all nations and sectors.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- The Catalyst Method -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="font-headline text-4xl font-bold text-on-surface mb-16 text-center">The Catalyst Method</h2>
+<div class="grid md:grid-cols-4 gap-4">
+<div class="relative group">
+<div class="bg-surface p-8 h-full rounded-xl transition-all group-hover:bg-primary group-hover:text-on-primary">
+<div class="text-6xl font-headline font-extrabold opacity-10 mb-4 group-hover:opacity-30">01</div>
+<h3 class="text-xl font-bold mb-4">Local Engagement</h3>
+<p class="text-sm opacity-80">Building trust with local stakeholders to understand the nuance of regional dynamics.</p>
+</div>
+</div>
+<div class="relative group">
+<div class="bg-surface p-8 h-full rounded-xl transition-all group-hover:bg-primary group-hover:text-on-primary">
+<div class="text-6xl font-headline font-extrabold opacity-10 mb-4 group-hover:opacity-30">02</div>
+<h3 class="text-xl font-bold mb-4">Scientific Research</h3>
+<p class="text-sm opacity-80">Applying predictive modeling to identify early warning signs of instability.</p>
+</div>
+</div>
+<div class="relative group">
+<div class="bg-surface p-8 h-full rounded-xl transition-all group-hover:bg-primary group-hover:text-on-primary">
+<div class="text-6xl font-headline font-extrabold opacity-10 mb-4 group-hover:opacity-30">03</div>
+<h3 class="text-xl font-bold mb-4">Strategic Investment</h3>
+<p class="text-sm opacity-80">Allocating resources to programs with the highest potential for scalable impact.</p>
+</div>
+</div>
+<div class="relative group">
+<div class="bg-surface p-8 h-full rounded-xl transition-all group-hover:bg-primary group-hover:text-on-primary">
+<div class="text-6xl font-headline font-extrabold opacity-10 mb-4 group-hover:opacity-30">04</div>
+<h3 class="text-xl font-bold mb-4">Scaling Impact</h3>
+<p class="text-sm opacity-80">Developing long-term infrastructures that ensure peace endures generations.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership & Visionaries -->
+<section class="py-24 bg-surface pb-12">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="font-headline text-4xl font-bold text-on-surface mb-16 text-center">Leadership &amp; Visionaries</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Leader 1 -->
+<div class="group text-center">
+<div class="mb-6 overflow-hidden rounded-full w-48 h-48 mx-auto grayscale group-hover:grayscale-0 transition-all border-4 border-surface-container">
+<img class="w-full h-full object-cover" data-alt="portrait of a mature man with kind eyes and grey hair, professional attire, soft neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASBA1Ys3vV1R4VLk4q_cEo0ZifYpnFef-298nX6BtNf2lS-z3Cn5988C8x1-cwwscpukdDP-elWpFC_wF15Kk76ef1cz0oqHn1PvJHyRhwkfqK8UkXnS7qP-CcmJTRowo8QDdGpjto2Fa6HHPYzXYRXkPxVhgRD9mAn9CwfVM7ILvxLMsGv-aaKHyhd10VDDj2TN3r-hZ95Mq_7A4Own29cabAiNtg59kvReFjHp_MUxbnWN7CPZo2GrbLbPDU6WN2P5E5nUoy6Q"/>
+</div>
+<h3 class="font-headline text-2xl font-bold text-on-surface">Dr. Aris Thorne</h3>
+<p class="text-primary font-semibold mb-4">Executive Director</p>
+<p class="font-body text-on-surface-variant text-sm">Former UN Diplomat with 20 years of experience in peace-building architecture.</p>
+</div>
+<!-- Leader 2 -->
+<div class="group text-center">
+<div class="mb-6 overflow-hidden rounded-full w-48 h-48 mx-auto grayscale group-hover:grayscale-0 transition-all border-4 border-surface-container">
+<img class="w-full h-full object-cover" data-alt="professional woman of color with a warm expression and confident posture, studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACsMmDINf2x8ezT0l_qdnRAOVJCm17qJ9c9rCjnchZmRD3R9Qa0L1niECMe4SvZKJ25Xwf7pl6Bq_hIehinhB3hkuKSEqMkn-4rb9lyKSDR6w_oK8WYUJWSj7hc9moKz8A9-1-hqzjl5SZvRwYlRpvuc77GWqSN79aXgOfQtCSMMNZwAguUAmqueSNbyASd4oWEdQuALh-kSwOcqFjDZxhM8xC0Ha5jayBtHNPNkyM-VAxkovhc7ySkNw5f5I3bZWzm3pJLd8now"/>
+</div>
+<h3 class="font-headline text-2xl font-bold text-on-surface">Elena Rodriguez</h3>
+<p class="text-primary font-semibold mb-4">Head of Strategy</p>
+<p class="font-body text-on-surface-variant text-sm">Expert in socio-economic resilience and conflict mitigation data analysis.</p>
+</div>
+<!-- Leader 3 -->
+<div class="group text-center">
+<div class="mb-6 overflow-hidden rounded-full w-48 h-48 mx-auto grayscale group-hover:grayscale-0 transition-all border-4 border-surface-container">
+<img class="w-full h-full object-cover" data-alt="middle aged man with glasses and a friendly smile, intelligent and approachable looking, outdoors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCA1v9LFMh5mV8yI3bYyQYWbwNAafllrpDMrAiaajdfnK1jr7TstSMLyEDO3dkjC90r1ps-MB6DHCkye3MTVacrMOmh4Omjp2NL9YKwAFeYmAfI7bR4zY4oUFzAP4ZEo8ppMfS8V6AbGyo8xgn9uXtxIaoyaYl3RQVosC1CXsh-MwaFmOrlD_VhJLub_uI5r3yy2zWyf15hV5JK4etm_qP7bz7d0zOBg6boKpBfUUE4iE9jC51yntD-Y48OOQYcD4aimMjIyKgQQ"/>
+</div>
+<h3 class="font-headline text-2xl font-bold text-on-surface">Markus Vance</h3>
+<p class="text-primary font-semibold mb-4">Chief Impact Officer</p>
+<p class="font-body text-on-surface-variant text-sm">Pioneer in sustainable development and ethical investment frameworks.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Board of Directors Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Governance</span>
+<h2 class="font-headline text-4xl font-bold text-on-surface">Board of Directors</h2>
+<div class="w-24 h-1 bg-primary mx-auto mt-6 rounded-full opacity-30"></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Board Member 1 -->
+<div class="bg-surface p-6 rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow">
+<div class="aspect-square rounded-lg overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="portrait of a distinguished woman with grey hair and a soft, confident smile, professional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiOZGC8ibJefvRt1d05rjcTLIHxt42LKtw-3WRQWvXFU_16FaGhXDaDYpnVYknqQLlk90GgMtZpi3hFr3Ls_kgIhIkc1IZ4uUuRla4N0kdSjAvGx2T3kLKvX62ybC60OR0OF2xRes-I03zulFz7bTzXviRlAdzn29sKZ91KsaRvoKcmx8MK1kTlBtdlKKyB9k8QW-XI3MjXcnknebdtDOuri7y8l-G9HRR8zaOg-fpkh7EZVjHH5x5ywz5aQOyYUKlDfUEfJme0w"/>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Ambassador Sarah Sterling</h3>
+<p class="text-primary font-semibold text-sm mb-4">Chairperson</p>
+<p class="font-body text-on-surface-variant text-xs leading-relaxed">Providing high-level strategic oversight and diplomatic relations for the fund.</p>
+</div>
+<!-- Board Member 2 -->
+<div class="bg-surface p-6 rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow">
+<div class="aspect-square rounded-lg overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="professional man in a suit, thoughtful expression, neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcieRTqLnK5eX1Cy7gU-j0hvRFMj8n0euMbOPZrdVXGhwyc7uk7UfYWQoLqbocut004hlYfE_8MuQZwGxv7tu1gbEv8b8qvwEPuMeTd5BMv7Znee0gBwdrAKTLct7hkxIPjxERzGRvM7rOh4fzMCR8Rju2vqj60TXkkgBtDXYwbtIt7rK5fHBifGWZKhyzexmFXy5e5aCMviZ5TMYyMAh0egpsMmLQeF_17taB7Mw1mQRoxI9HyUPpZUtNyA5htbEy25XdPPRkDg"/>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface">David Chen</h3>
+<p class="text-primary font-semibold text-sm mb-4">Treasurer</p>
+<p class="font-body text-on-surface-variant text-xs leading-relaxed">Managing global financial stewardship and ensuring fiscal transparency across all initiatives.</p>
+</div>
+<!-- Board Member 3 -->
+<div class="bg-surface p-6 rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow">
+<div class="aspect-square rounded-lg overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="smiling woman of color in professional attire, bright background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWF7ONkHyWeVxKHsRKth3lmmJBm4ttTELbGAzSHbLmlIlr3oieAWojm6xE2AmJxxeDEvvMalm7fqolPi-NomFqFCV75PyKzB5fpicn7TgbClTF7M5SyFXaax8CtrjXURh_M-OcUz5P9cPy9eDmEwI-VjblQvj1xl4qobaO1_4pK9La3uS_4YEZpwFhKTlqFyQCM0AZRhdGip7MfpbUaZtEotfti8EDDj5AnLl-LcCnOYjofuJaKVESJfjRJ7eWySDk8-KRvE4HCw"/>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Dr. Nia Akoto</h3>
+<p class="text-primary font-semibold text-sm mb-4">Secretary</p>
+<p class="font-body text-on-surface-variant text-xs leading-relaxed">Overseeing institutional governance, board records, and compliance standards.</p>
+</div>
+<!-- Board Member 4 -->
+<div class="bg-surface p-6 rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow">
+<div class="aspect-square rounded-lg overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="man with glasses and a friendly, serious expression, modern office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnB4dnaM5QkUTsBFCWVvtHHeyV6kwQU73AfQvoGtSx_5ud78tyNDrKgX5ey_5YwwGguO3d_QmCsRd9BrY2LXM7EoeGzhavz6BHNBMs1npuu3p6dR0HwTRJP-EqVS7F3MfhQe7f-2iYdqDjAnw9xXsYPn_EiaHzFfV9Jn-aZtgYAYz_MA1gZYS0xnYbh7lRYm1Dh94vhFq8TQTam1eF-AduCRFdnSfborfuIxnjSnOvbqf_yPvY59VdJVbcsSm9y_MNThjvC9kpVg"/>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Jameson Burke</h3>
+<p class="text-primary font-semibold text-sm mb-4">Director of Ethics</p>
+<p class="font-body text-on-surface-variant text-xs leading-relaxed">Ensuring all mediation frameworks adhere to the highest global humanitarian ethics.</p>
+</div>
+</div>
+<div class="mt-16 text-center">
+<p class="font-body text-on-surface-variant italic max-w-2xl mx-auto">
+                "Our board represents a unique intersection of global diplomacy, scientific rigor, and ethical financial management, dedicated to the singular goal of a more harmonious world."
+            </p>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-24 px-8">
+<div class="max-w-7xl mx-auto bg-primary rounded-3xl p-12 md:p-24 relative overflow-hidden text-center text-on-primary">
+<div class="absolute inset-0 opacity-10">
+<div class="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 bg-secondary-container rounded-full blur-3xl -translate-x-1/2 translate-y-1/2"></div>
+</div>
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="font-headline text-4xl md:text-6xl font-extrabold mb-8">Join the Catalyst</h2>
+<p class="font-body text-xl opacity-90 mb-12 leading-relaxed">Your support enables us to deploy resources where they are needed most. Together, we can build a more peaceful and resilient world.</p>
+<div class="flex flex-col md:flex-row gap-6 justify-center">
+<button class="bg-on-primary text-primary px-10 py-5 rounded-full font-bold text-lg hover:bg-surface-container-lowest transition-all">Our Programs</button>
+<button class="border-2 border-on-primary text-on-primary px-10 py-5 rounded-full font-bold text-lg hover:bg-on-primary hover:text-primary transition-all">Donate Now</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Updated Footer -->
+<footer class="w-full rounded-t-[2.5rem] mt-20 bg-[#f1f4f9] dark:bg-slate-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-12 py-20">
+<div>
+<div class="font-manrope font-bold text-[#00677e] text-xl mb-4">World Peace Catalyst Fund</div>
+<p class="text-slate-500 dark:text-slate-500 font-inter text-sm leading-relaxed mb-4">Architecting sustainable harmony through innovation, leadership, and community action.</p>
+</div>
+<div>
+<h4 class="font-manrope font-semibold text-[#00677e] dark:text-[#4bb1cf] mb-4">Links</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-500 dark:text-slate-500 hover:underline decoration-2 underline-offset-4 transition-all text-sm font-inter" href="#">Impact Report</a></li>
+<li><a class="text-slate-500 dark:text-slate-500 hover:underline decoration-2 underline-offset-4 transition-all text-sm font-inter" href="#">Contact Us</a></li>
+<li><a class="text-slate-500 dark:text-slate-500 hover:underline decoration-2 underline-offset-4 transition-all text-sm font-inter" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 dark:text-slate-500 hover:underline decoration-2 underline-offset-4 transition-all text-sm font-inter" href="#">Tax Status</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-manrope font-bold text-[#00677e] dark:text-[#4bb1cf] mb-4">Subscribe to Peace</h4>
+<p class="text-slate-500 dark:text-slate-500 text-sm font-inter leading-relaxed mb-6">Join our monthly newsletter for global impact updates.</p>
+<div class="flex flex-col sm:flex-row gap-3">
+<input class="bg-white dark:bg-slate-900 border-none rounded-lg px-4 py-3 text-sm flex-grow focus:ring-2 focus:ring-[#00677e] placeholder-slate-400" placeholder="Email address" type="email"/>
+<button class="bg-[#00677e] text-white px-8 py-3 rounded-lg font-semibold text-sm hover:opacity-70 active:scale-[0.98] transition-all">Join</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 pb-12 border-t border-slate-200/50 dark:border-slate-800/50 pt-8 text-center md:text-left">
+<p class="text-slate-500 dark:text-slate-500 font-inter text-xs leading-relaxed">© 2024 World Peace Catalyst Fund. All rights reserved. 501(c)(3) Non-profit Organization.</p>
+</div>
+</footer>
+</body></html>

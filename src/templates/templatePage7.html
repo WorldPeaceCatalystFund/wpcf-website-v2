@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-container": "#4bb1cf",
+              "error-container": "#ffdad6",
+              "surface-tint": "#00677e",
+              "on-tertiary-fixed-variant": "#2b4d44",
+              "on-primary": "#ffffff",
+              "surface-container-highest": "#e0e3e8",
+              "on-tertiary": "#ffffff",
+              "on-surface-variant": "#3e484c",
+              "on-secondary-container": "#6d6400",
+              "surface": "#f7f9ff",
+              "on-background": "#181c20",
+              "surface-container": "#ebeef3",
+              "on-error": "#ffffff",
+              "primary-fixed": "#b4ebff",
+              "outline": "#6e797d",
+              "inverse-primary": "#71d3f2",
+              "on-secondary-fixed": "#1f1c00",
+              "on-primary-container": "#004150",
+              "surface-dim": "#d7dadf",
+              "secondary-fixed-dim": "#d8c939",
+              "error": "#ba1a1a",
+              "surface-variant": "#e0e3e8",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed-dim": "#a9cec2",
+              "on-secondary-fixed-variant": "#4e4800",
+              "secondary-fixed": "#f5e554",
+              "tertiary": "#42655b",
+              "surface-container-low": "#f1f4f9",
+              "primary": "#00677e",
+              "background": "#f7f9ff",
+              "tertiary-fixed": "#c5ebde",
+              "on-error-container": "#93000a",
+              "surface-bright": "#f7f9ff",
+              "on-tertiary-fixed": "#00201a",
+              "tertiary-container": "#88aca1",
+              "primary-fixed-dim": "#71d3f2",
+              "on-surface": "#181c20",
+              "on-primary-fixed-variant": "#004e5f",
+              "on-tertiary-container": "#1e4038",
+              "secondary-container": "#f2e351",
+              "secondary": "#686000",
+              "inverse-surface": "#2d3135",
+              "outline-variant": "#bdc8cd",
+              "surface-container-high": "#e5e8ee",
+              "on-primary-fixed": "#001f27",
+              "on-secondary": "#ffffff",
+              "inverse-on-surface": "#eef1f6"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f7f9ff;
+            color: #181c20;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm shadow-cyan-900/5">
+<nav class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold text-cyan-800 font-headline tracking-tight">World Peace Catalyst Fund</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 hover:text-cyan-700 transition-colors duration-300 font-headline font-medium" href="#">Impact</a>
+<a class="text-slate-600 hover:text-cyan-700 transition-colors duration-300 font-headline font-medium" href="#">Initiatives</a>
+<a class="text-cyan-800 font-bold border-b-2 border-cyan-600 font-headline" href="#">Volunteer</a>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-headline font-medium scale-95 active:opacity-80 transition-transform">Donate</button>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary">menu</span>
+</div>
+</nav>
+</header>
+<main class="pt-32 pb-20 px-6 overflow-hidden">
+<div class="max-w-5xl mx-auto">
+<!-- Hero Success Section -->
+<section class="relative mb-20 flex flex-col items-center text-center">
+<!-- Decorative blurred shape -->
+<div class="absolute -top-24 -left-24 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl -z-10"></div>
+<div class="absolute -bottom-12 -right-12 w-64 h-64 bg-tertiary-container/10 rounded-full blur-3xl -z-10"></div>
+<div class="mb-8 inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary-container/20 text-primary">
+<span class="material-symbols-outlined text-4xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+</div>
+<h1 class="font-headline text-display-lg text-5xl md:text-6xl font-extrabold text-on-surface tracking-tight mb-6">
+                    Thank You for Stepping Forward
+                </h1>
+<p class="font-body text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+                    Your application to join the World Peace Catalyst Fund as a volunteer has been received. People like you are the heartbeat of global harmony.
+                </p>
+</section>
+<!-- Bento Engagement Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-24">
+<!-- Timeline/Next Steps Card -->
+<div class="md:col-span-7 bg-surface-container-lowest p-10 rounded-xl shadow-sm shadow-cyan-900/5 flex flex-col justify-center border border-outline-variant/10">
+<h3 class="font-headline text-2xl font-bold text-primary mb-6">What happens next?</h3>
+<div class="space-y-8">
+<div class="flex gap-4">
+<div class="flex-none w-8 h-8 rounded-full bg-tertiary-container/30 flex items-center justify-center text-on-tertiary-container font-bold text-sm">1</div>
+<div>
+<p class="font-headline font-semibold text-on-surface mb-1">Application Review</p>
+<p class="font-body text-on-surface-variant text-sm">Our team will review your skills and interests to find the best initiative alignment.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-none w-8 h-8 rounded-full bg-tertiary-container/30 flex items-center justify-center text-on-tertiary-container font-bold text-sm">2</div>
+<div>
+<p class="font-headline font-semibold text-on-surface mb-1">Personal Outreach</p>
+<p class="font-body text-on-surface-variant text-sm">You can expect an email or call from our volunteer coordinator within <span class="font-semibold text-primary">3 business days</span>.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-none w-8 h-8 rounded-full bg-tertiary-container/30 flex items-center justify-center text-on-tertiary-container font-bold text-sm">3</div>
+<div>
+<p class="font-headline font-semibold text-on-surface mb-1">Onboarding Session</p>
+<p class="font-body text-on-surface-variant text-sm">We'll schedule a brief virtual meeting to welcome you and discuss your first project.</p>
+</div>
+</div>
+</div>
+<div class="mt-10 pt-8 border-t border-outline-variant/10">
+<a class="inline-flex items-center gap-2 bg-primary text-on-primary px-8 py-3 rounded-full font-headline font-bold hover:shadow-lg hover:shadow-primary/20 transition-all active:scale-95" href="#">
+<span>Explore Other Opportunities</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div></div>
+<!-- Featured Image/Quote Card -->
+<div class="md:col-span-5 relative group overflow-hidden rounded-xl aspect-square md:aspect-auto">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="diverse group of volunteers smiling and working together in a sun-drenched community garden, soft warm lighting, peaceful atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7ttI33vNIl4MDiNARpHdKPP03s9fddYksvHp06TkHQFv37ryVErBLvDjVXWQW5wEHs1JH3gwk_hir_8lETbZlOP5EltlHb_gMhYYwQCXG-SNm8IadDk5xCXr7cMupPtHaXhXq8ZO2fGz4Ix_zwVYxs0MptuTuH1MJOstU1IzzAcKt6bCGEE2qQwF_dtqy-gnsU3IFpXkglqsJX-WsU0_B-ge6m_ixhyR4VYYKwh7qUmwI_Rrp21OLBYmgGE9f3j7j2cD7d86xoA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-8">
+<span class="material-symbols-outlined text-white/60 mb-4 text-3xl">format_quote</span>
+<p class="text-white font-headline text-xl font-medium italic leading-snug">
+                            "Peace is not just the absence of conflict, but the presence of justice and service to one another."
+                        </p>
+</div>
+</div>
+<!-- Engagement Links -->
+<div class="md:col-span-6 bg-surface-container-low p-8 rounded-xl flex items-center justify-between border border-outline-variant/10 group cursor-pointer">
+<div class="flex flex-col gap-2">
+<span class="label-md text-primary font-bold tracking-widest uppercase text-xs">Knowledge</span>
+<h4 class="font-headline text-xl font-bold text-on-surface">Read our latest Impact Report</h4>
+</div>
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+<div class="md:col-span-6 bg-surface-container-low p-8 rounded-xl flex items-center justify-between border border-outline-variant/10 group cursor-pointer">
+<div class="flex flex-col gap-2">
+<span class="label-md text-secondary font-bold tracking-widest uppercase text-xs">Community</span>
+<h4 class="font-headline text-xl font-bold text-on-surface">Follow our journey on social media</h4>
+</div>
+<div class="flex gap-3">
+<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-lg">public</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-lg">camera</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Decorative Break -->
+<div class="flex justify-center mb-24 opacity-20">
+<div class="h-px w-24 bg-primary"></div>
+<div class="mx-4 text-primary"><span class="material-symbols-outlined text-xs">favorite</span></div>
+<div class="h-px w-24 bg-primary"></div>
+</div>
+<!-- Impact Metrics (Custom Component) -->
+<section class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-24">
+<div class="flex flex-col items-center md:items-start md:mt-8">
+<span class="font-headline text-5xl font-extrabold text-primary leading-none">124</span>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">Nations Touched</span>
+</div>
+<div class="flex flex-col items-center md:items-start">
+<span class="font-headline text-5xl font-extrabold text-secondary leading-none">8.2k</span>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">Active Catalysts</span>
+</div>
+<div class="flex flex-col items-center md:items-start md:mt-12">
+<span class="font-headline text-5xl font-extrabold text-primary leading-none">15m</span>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">Hours Contributed</span>
+</div>
+<div class="flex flex-col items-center md:items-start md:mt-4">
+<span class="font-headline text-5xl font-extrabold text-secondary leading-none">100%</span>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">Transparent Impact</span>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200/20 bg-slate-50">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 py-12 max-w-7xl mx-auto">
+<div>
+<div class="font-manrope font-semibold text-slate-900 mb-4 text-lg">World Peace Catalyst Fund</div>
+<p class="font-inter text-sm text-slate-500 max-w-sm mb-6">
+                    Fostering global harmony through grassroots action, visionary leadership, and sustainable community development.
+                </p>
+<p class="font-inter text-sm text-slate-500">© 2024 World Peace Catalyst Fund. All rights reserved.</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-3">
+<a class="text-slate-500 hover:text-cyan-600 transition-all font-inter text-sm" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-cyan-600 transition-all font-inter text-sm" href="#">Terms of Service</a>
+<a class="text-slate-500 hover:text-cyan-600 transition-all font-inter text-sm" href="#">Contact Us</a>
+</div>
+<div class="flex flex-col gap-3">
+<a class="text-slate-500 hover:text-cyan-600 transition-all font-inter text-sm" href="#">Annual Report</a>
+<a class="text-slate-500 hover:text-cyan-600 transition-all font-inter text-sm" href="#">Careers</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
