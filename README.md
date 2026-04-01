@@ -1,5 +1,7 @@
 # WpcfFrontEnd
 
+Currently migrating old website (Angular 13) to new website (Angular 21 with new templates).
+Please check out the WPCF project page to find a new task to work on.  Migration of the different components are tracked there.  Clone the repository, code, commit and push.  You will need an ssh key, so contact the admin for ssh key.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
 
 ## Development server
