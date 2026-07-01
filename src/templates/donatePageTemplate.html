@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#f0ede9",
+                        "primary-container": "#026879",
+                        "background": "#fcf9f4",
+                        "on-primary-fixed-variant": "#004e5b",
+                        "primary-fixed": "#a9edff",
+                        "inverse-on-surface": "#f3f0eb",
+                        "on-secondary-container": "#4c6957",
+                        "primary": "#004e5c",
+                        "surface": "#fcf9f4",
+                        "surface-container-highest": "#e5e2dd",
+                        "on-surface": "#1c1c19",
+                        "outline": "#6f797c",
+                        "on-secondary-fixed": "#042013",
+                        "surface-dim": "#dcdad5",
+                        "surface-container-high": "#ebe8e3",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#5d4300",
+                        "inverse-primary": "#86d2e5",
+                        "secondary-fixed": "#caead3",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#026879",
+                        "inverse-surface": "#31302d",
+                        "on-background": "#1c1c19",
+                        "secondary-container": "#c7e8d1",
+                        "on-primary-container": "#98e4f8",
+                        "surface-container-low": "#f6f3ee",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#e8c176",
+                        "on-tertiary-fixed-variant": "#5c4200",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#ffdea3",
+                        "on-primary-fixed": "#001f26",
+                        "on-secondary-fixed-variant": "#304d3c",
+                        "on-tertiary-fixed": "#261900",
+                        "on-surface-variant": "#3f484b",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#bec8cb",
+                        "surface-variant": "#e5e2dd",
+                        "surface-bright": "#fcf9f4",
+                        "on-tertiary-container": "#fcd386",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#86d2e5",
+                        "secondary": "#486553",
+                        "tertiary-container": "#775a19",
+                        "secondary-fixed-dim": "#aeceb8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Newsreader"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 30px 60px -12px rgba(28, 28, 25, 0.04);
+        }
+        body {
+            background-color: #fcf9f4;
+            color: #1c1c19;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md">
+<nav class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="font-headline font-black text-xl tracking-tighter text-teal-900">World Peace Catalyst Fund</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-headline uppercase tracking-widest text-[11px] font-bold text-slate-600 hover:text-teal-500 transition-colors duration-300" href="#">Our Mission</a>
+<a class="font-headline uppercase tracking-widest text-[11px] font-bold text-slate-600 hover:text-teal-500 transition-colors duration-300" href="#">Impact Stories</a>
+<a class="font-headline uppercase tracking-widest text-[11px] font-bold text-slate-600 hover:text-teal-500 transition-colors duration-300" href="#">Transparency</a>
+<a class="font-headline uppercase tracking-widest text-[11px] font-bold text-slate-600 hover:text-teal-500 transition-colors duration-300" href="#">Resources</a>
+</div>
+<button class="bg-primary text-white px-6 py-2 rounded-full font-headline font-bold text-[11px] uppercase tracking-widest transition-transform hover:scale-95 active:scale-90 duration-200">Donate</button>
+</nav>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 py-16 md:py-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<h1 class="font-headline text-5xl md:text-7xl font-black text-primary leading-tight tracking-tighter">
+                    Your support creates <span class="text-tertiary">ripples</span> of peace.
+                </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant leading-relaxed max-w-xl">
+                    Every contribution fuels local initiatives, transparency in governance, and educational archives that secure a more harmonious future for global communities.
+                </p>
+<div class="flex items-center gap-4 text-secondary font-medium italic">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>100% of public donations go directly to the field.</span>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-surface-container-high rounded-lg -rotate-1 group-hover:rotate-0 transition-transform duration-500"></div>
+<img alt="Global Community" class="relative rounded-lg w-full aspect-[4/5] object-cover editorial-shadow" data-alt="Candid photograph of children smiling and playing in a peaceful rural community setting, warm afternoon sunlight, soft bokeh background, film photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIiGXK5nu9Li6IXguJQQbmiEW60gum_2rqv9yTrCdQA6_Lh2BvgU7Ik90jzAKBwHX7C5S5goDlo0eaqHymPTzHOSl3NUEdAS36ksvbrU8CDDKrQnWVhxMeJpQbyS1hT9ApUmjv7RuyVr3MxlPMhHJnJfQ_0iV8yRpf1l-UFqPzewOnhRk03fzsfcHgdlolWyCThoec2CU-Dcr5pjZbNK04kOvYc58S592G6ZTId3EP258FBMzXkpnqjIdb98kkPZwllp2lMpFGUeK7"/>
+<div class="absolute bottom-6 -right-6 bg-white/80 backdrop-blur-md p-6 rounded-DEFAULT editorial-shadow max-w-[240px]">
+<p class="font-body italic text-lg leading-snug">"The archive changed how we tell our story. We are no longer invisible."</p>
+<p class="font-headline text-[10px] uppercase tracking-widest mt-4 font-bold text-primary">Amina K., Community Leader</p>
+</div>
+</div>
+</section>
+<!-- Donation Form & Payment -->
+<section class="bg-surface-container-low py-24 rounded-t-lg">
+<div class="max-w-4xl mx-auto px-8">
+<div class="bg-surface-container-lowest rounded-lg editorial-shadow overflow-hidden">
+<div class="p-8 md:p-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Amount Selection -->
+<div class="space-y-8">
+<h3 class="font-headline text-2xl font-bold text-primary">Choose Your Impact</h3>
+<div class="flex bg-surface-container rounded-full p-1 w-fit">
+<button class="px-6 py-2 rounded-full bg-primary text-white font-headline text-xs font-bold uppercase tracking-widest">One-time</button>
+<button class="px-6 py-2 rounded-full text-on-surface-variant font-headline text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors">Monthly</button>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="border border-outline-variant hover:border-primary hover:bg-primary/5 transition-all p-4 rounded-DEFAULT flex flex-col items-start gap-1 group">
+<span class="font-headline text-xl font-bold text-on-surface">$25</span>
+<span class="font-headline text-[10px] uppercase tracking-widest text-on-surface-variant">Supporter</span>
+</button>
+<button class="border border-outline-variant hover:border-primary hover:bg-primary/5 transition-all p-4 rounded-DEFAULT flex flex-col items-start gap-1 group">
+<span class="font-headline text-xl font-bold text-on-surface">$50</span>
+<span class="font-headline text-[10px] uppercase tracking-widest text-on-surface-variant">Advocate</span>
+</button>
+<button class="bg-primary-container text-white p-4 rounded-DEFAULT flex flex-col items-start gap-1 shadow-lg shadow-primary/20">
+<span class="font-headline text-xl font-bold">$100</span>
+<span class="font-headline text-[10px] uppercase tracking-widest opacity-80">Catalyst</span>
+</button>
+<button class="border border-outline-variant hover:border-primary hover:bg-primary/5 transition-all p-4 rounded-DEFAULT flex flex-col items-start gap-1 group">
+<span class="font-headline text-xl font-bold text-on-surface">$500</span>
+<span class="font-headline text-[10px] uppercase tracking-widest text-on-surface-variant">Guardian</span>
+</button>
+</div>
+<div class="relative">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant font-headline">$</span>
+<input class="w-full bg-surface-container-low border-b-2 border-outline-variant focus:border-primary focus:ring-0 pl-8 py-4 font-headline rounded-t-sm transition-all outline-none" placeholder="Custom amount" type="text"/>
+</div>
+</div>
+<!-- Payment Details -->
+<div class="space-y-8">
+<h3 class="font-headline text-2xl font-bold text-primary">Payment Details</h3>
+<div class="space-y-4">
+<div class="space-y-1">
+<label class="font-headline text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">Full Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-sm px-4 py-3 focus:ring-1 focus:ring-primary" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-headline text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">Email Address</label>
+<input class="w-full bg-surface-container-low border-none rounded-sm px-4 py-3 focus:ring-1 focus:ring-primary" type="email"/>
+</div>
+<div class="space-y-1">
+<label class="font-headline text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">Card Number</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low border-none rounded-sm px-4 py-3 focus:ring-1 focus:ring-primary" placeholder="•••• •••• •••• ••••" type="text"/>
+<div class="absolute right-4 top-1/2 -translate-y-1/2 flex gap-2">
+<span class="material-symbols-outlined text-outline-variant">credit_card</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-1">
+<label class="font-headline text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">Expiry</label>
+<input class="w-full bg-surface-container-low border-none rounded-sm px-4 py-3 focus:ring-1 focus:ring-primary" placeholder="MM/YY" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-headline text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">CVC</label>
+<input class="w-full bg-surface-container-low border-none rounded-sm px-4 py-3 focus:ring-1 focus:ring-primary" placeholder="•••" type="text"/>
+</div>
+</div>
+</div>
+<button class="w-full bg-primary text-white rounded-full py-5 font-headline font-black uppercase tracking-[0.2em] text-sm shadow-xl shadow-primary/20 hover:scale-[0.98] transition-transform">Complete Donation</button>
+<p class="text-center text-[10px] font-headline text-outline uppercase tracking-wider flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[14px]">lock</span> 
+                                    Secure &amp; Encrypted SSL Transaction
+                                </p>
+</div>
+</div>
+</div>
+<!-- Trust Footer in Form -->
+<div class="bg-surface-container px-8 py-6 flex flex-wrap justify-between items-center gap-4">
+<span class="font-headline text-[10px] uppercase tracking-widest font-bold text-on-secondary-container">Recognized By:</span>
+<div class="flex items-center gap-8 opacity-60">
+<span class="font-headline font-bold text-xs">CHARITY NAVIGATOR</span>
+<span class="font-headline font-bold text-xs">GUIDESTAR PLATINUM</span>
+<span class="font-headline font-bold text-xs">GIVEWELL</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Impact Snippet Section -->
+<section class="py-24 max-w-5xl mx-auto px-8 text-center">
+<div class="relative inline-block">
+<span class="material-symbols-outlined text-6xl text-primary/10 absolute -top-8 -left-8" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<blockquote class="font-body italic text-3xl md:text-4xl text-on-surface-variant leading-tight relative z-10">
+                    "This fund isn't just about money; it's about the <span class="text-primary not-italic font-medium">dignity</span> of being seen and the power of having a voice in our own development."
+                </blockquote>
+</div>
+<div class="mt-8 flex flex-col items-center gap-2">
+<div class="w-12 h-[1px] bg-outline-variant"></div>
+<p class="font-headline font-bold text-[11px] uppercase tracking-widest text-primary">Mateo Rodriguez</p>
+<p class="font-body text-sm text-outline italic">Urban Peace Initiative, Medellín</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full rounded-t-[2rem]">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-20 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="font-headline font-bold text-lg text-teal-900">World Peace Catalyst Fund</div>
+<p class="font-body italic text-base text-slate-700 leading-relaxed max-w-xs">
+                    Dedicated to a living archive of global progress and the human stories behind every peace initiative.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-4">
+<a class="font-headline uppercase tracking-widest text-[10px] font-bold text-slate-500 hover:text-teal-600 transition-all" href="#">About Us</a>
+<a class="font-headline uppercase tracking-widest text-[10px] font-bold text-slate-500 hover:text-teal-600 transition-all" href="#">Annual Report</a>
+<a class="font-headline uppercase tracking-widest text-[10px] font-bold text-slate-500 hover:text-teal-600 transition-all" href="#">Grants</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-headline uppercase tracking-widest text-[10px] font-bold text-slate-500 hover:text-teal-600 transition-all" href="#">Join Movement</a>
+<a class="font-headline uppercase tracking-widest text-[10px] font-bold text-slate-500 hover:text-teal-600 transition-all" href="#">Contact</a>
+<a class="font-headline uppercase tracking-widest text-[10px] font-bold text-slate-500 hover:text-teal-600 transition-all" href="#">Privacy Policy</a>
+</div>
+</div>
+<div class="space-y-6 text-right md:text-right">
+<div class="font-headline font-black text-4xl text-teal-900/10 select-none">WPCF</div>
+<p class="font-body italic text-sm text-slate-500">© 2024 World Peace Catalyst Fund. Dedicated to a living archive of global progress.</p>
+</div>
+</div>
+</footer>
+</body></html>
